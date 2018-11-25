@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Trivia</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="bienvenida" >
+        <h1>Bienvenidos a la Trivia</h1>
+
+    <p class="txt_nombre">Para comenzar el juego <br/> <b>Ingresa tu nombre</b></p>
+    <form>
+    <input type="text" id="nombre" name="name" value="" required><br><br/>
+    <button type="submit" class="boton" onclick="capturar()">Enviar</button>
+    </form>
+    </div>
+
+<div id="categoria">
+        <p class='txt_nombre'>Para jugar selecciona una Categoria </p>
+        <button type='submit' id='Tierra' class='boton_tierra' onclick='tierra()'>La Tierra</button>
+        <button type='submit' id='Universo' class='boton_universo' onclick='universo()'>El Universo</button>
+</div>
+
+
+<div id="preguntastierra">
+       <div class="preguntauno">
+           <h3>1). ¿Cuántos continentes hay?</h3><br/>
+           <input type='radio' id='res1' name='radioPreguntauno'>10<br/>
+           <input type='radio' id='res2' name='radioPreguntauno'>5<br/>
+           <input type='radio' id='res3' name='radioPreguntauno'>3<br/>
+       </div><br/>
+
+       <div class="preguntados">
+        <h3>2). ¿Cuántos oceanos hay?</h3><br/>
+            <input type='radio' id='res4' name='radioPreguntados'>4<br/>
+            <input type='radio' id='res5' name='radioPreguntados'>5<br/>
+            <input type='radio' id='res6' name='radioPreguntados'>7<br/>
+        </div><br/>
+        <div class="preguntatres">
+            <h3>3). ¿Cómo se llama el meridiano que divide la tierra?</h3><br/>
+                <input type='radio' id='res9' name='radioPreguntatres'>ecuador<br/>
+                <input type='radio' id='res8' name='radioPreguntatres'>greenwish<br/>
+                <input type='radio' id='res7' name='radioPreguntatres'>lima<br/>
+            </div><br/>
+            <button type='submit' id='resTierra' class='resTierra' onclick='Resultadodos()'>Enviar</button>
+
+</div>
+
+
+<div id="preguntasuniverso" style="display:none">
+    <div id="divPregunta1">
+      <h3>¿Cuántos planetas existen?</h3>
+      <input type="radio" id="re1" name="radioPregunta1"  value="8"> 8 <br>
+      <input type="radio" id="re2" name="radioPregunta1" value="20"> 20 <br>
+      <input type="radio" id="re3" name="radioPregunta1" value="4"> 4 <br>
+      <input type="radio" id="re4" name="radioPregunta1"  value="100"> 100 <br>
+  
+    </div>
+    <div id="divPregunta2" >
+  
+      <h3>¿Cuántos años tiene el Universo?</h3>
+      <input type="radio" id="re5" name="radioPregunta2"  value="100"> 100 <br>
+      <input type="radio" id="re6" name="radioPregunta2"  value="1"> miles de millones<br>
+      <input type="radio" id="re7" name="radioPregunta2"  value="300000"> 300000 <br>
+      <input type="radio" id="re8" name="radioPregunta2"  value="666"> 666 <br>
+    </div>
+    <div id="divPregunta3">
+      <h3>¿Qué es un cuerpo celeste?</h3>
+      <input type="radio" id="re9" name="radioPregunta3" value="Planeta"> Un Planeta <br>
+      <input type="radio" id="re10" name="radioPregunta3" value="Estrella"> Una Estrella<br>
+      <input type="radio" id="re11" name="radioPregunta3" value="Sistema Solar"> Un sistema Solar<br>
+      <input type="radio" id="re12" name="radioPregunta3" value="Region"> Una Región<br>
+  
+      <button type='submit' type="button" class=". boton" value="Resultado" onclick="Resultado()">Enviar</button>
+  
+  
+  </div>
+  
+<div id="volverJugar">
+        <button onclick="jugarDeNuevo()">Volver a jugar</button>
+ </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
